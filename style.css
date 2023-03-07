@@ -1,0 +1,34 @@
+body, html {
+    height: 100%;
+    background-image:url("Screenshot\ 2023-03-05\ 215327.png");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: 50% 0;
+    background-size:cover;
+}
+
+.serif {
+    text-align:center;
+    font:serif;
+    color:white;
+}
+
+.userimg{
+    width:180px;
+    height:180px;
+}
+.userimg:hover{
+	cursor: pointer;
+}
+
+.resetHover{
+    text-align:center;
+}
+
+h2, h3 {
+    color:white;
+}
+
+button {
+    font-size:30px;
+}
