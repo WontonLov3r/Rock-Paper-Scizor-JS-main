@@ -61,6 +61,35 @@ const determineWinner = (userChoice, computerChoice) => {
     }
   }
 
+  if (userChoice === 'rock') {
+    if (computerChoice === "paper") {
+      document.getElementById("winner").src = "paper.png";
+      document.getElementById("compImg").src = "paper.png";
+      document.getElementById("winnerTag").innerHTML = 'Winner!';
+      document.getElementById("computerWins").innerHTML = computerWins++;
+    } else {
+      document.getElementById("winner").src = "rock.png";
+      document.getElementById("compImg").src = "scissors.png";
+      document.getElementById("winnerTag").innerHTML = 'Winner!';
+      document.getElementById("playerWins").innerHTML = playerWins++;
+    }
+  }
+
+  if (userChoice === 'paper') {
+    if (computerChoice === "scissors") {
+      document.getElementById("winner").src = "scissors.png";
+      document.getElementById("compImg").src = "scissors.png";
+      document.getElementById("winnerTag").innerHTML = 'Winner!';
+      document.getElementById("computerWins").innerHTML = computerWins++;
+    } else {
+      document.getElementById("winner").src = "paper.png";
+      document.getElementById("compImg").src = "rock.png";
+      document.getElementById("winnerTag").innerHTML = 'Winner!';
+      document.getElementById("playerWins").innerHTML = playerWins++;
+    }
+  }
+
+
   if (userChoice === "scissors") {
     if (computerChoice === "rock") {
       document.getElementById("winner").src = "rock.png";
