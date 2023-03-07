@@ -23,9 +23,7 @@ const getUserChoice = (userChoice) => {
     document.getElementById("rock").src = "rock.png";
     document.getElementById("scissors").src = "scissors.png";
     return userChoice;
-  } else {
-    console.log("Error, please type:rock, paper, or scissors.");
-  }
+  } 
 };
 
 //This function randomizes the computer's choices and then saves the computer choice for when the function is called
