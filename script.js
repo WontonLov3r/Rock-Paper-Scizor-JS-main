@@ -1,6 +1,3 @@
-//opening message
-let Enter = prompt("Are you ready to die: ")
-
 //This sets the base score, the starting score for both the computer and the player as 0
 let playerWins = 0;
 let computerWins = 0;
@@ -109,13 +106,5 @@ const playGame = (choice) => {
   const computerChoice = getComputerChoice();
   console.log(determineWinner(userChoice, computerChoice));
 };
-
-//This function reset, takes the scores of both the computer and player and resets it, putting it back to 0
-const reset = () => {
-  let playerWins = 0;
-  document.getElementById("playerWins").innerHTML = 0;
-  let computerWins = 0;
-  document.getElementById("computerWins").innerHTML = 0;
-}
 
 playGame();
